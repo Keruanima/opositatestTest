@@ -1,6 +1,54 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset fin*/
+/*downarrow*/
 
 .col-xs-15,
 .col-sm-15,
@@ -1088,13 +1136,14 @@ label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check {
 
 
 .header-interior {
-    width: 100%;
-    min-height: 229px;
-    padding:70px 0 50px 0;
+    width: 55%;
+    z-index: 1;
+	position:absolute;
     background: url('header_bg.jpg') no-repeat center top;
     background-size:cover;
     color:#fff;
     text-align: center;
+	    clip-path: polygon(0 0, 95% 0, 95% 45%, 98% 50%, 95% 55%, 95% 100%, 0 100%)
 }
 .planes-y-precios .header-interior {
     min-height: 395px;
@@ -1708,17 +1757,27 @@ form.registro {
 .contenido {
     padding:50px 0 70px 0;
 }
+.contenido .container{
+ padding-left:5% !important;
+}
 /*eliminando anchos y paddings pagina esquemas*/
 .logged-out.ventajas .contenido-wrapper{
 padding: 78px 0 0 0;
 }
 .logged-out.ventajas .contenido-wrapper .contenido{
 	padding: 0;
+	background-color: #03a9f4;
+	float:right;
+	width:50%;
 }
+/*div azul con recorrido diagonal*/
+
 .logged-out.ventajas .contenido-wrapper .container{
-	padding: 0;
-	margin:auto;
-	width:100%;
+	padding: 50px;
+    margin: auto;
+    width: 95%;
+    padding-top: 140px;
+	min-height: 490px;
 }
 
 /*eliminando anchos y paddings pagina esquemas Fin*/
@@ -3467,6 +3526,7 @@ footer {
     color:#fff;
     font-size:14px;
     width:100%;
+	position:relative;
     float:left;
 }
 footer a, footer a:active, footer a:focus {
@@ -3772,6 +3832,9 @@ footer .salir-test span.cerrar-test {
 .alert.alert-info a.btn_04{
 	text-decoration:none;
 	color:black;
+}
+.contenido .container .alert.alert-info{
+	font-size:21px;
 }
 /*boton sin subrayado*/
 /*
