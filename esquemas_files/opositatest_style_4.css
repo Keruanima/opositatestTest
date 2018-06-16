@@ -1142,8 +1142,9 @@ label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check {
     background: url('header_bg.jpg') no-repeat center top;
     background-size:cover;
     color:#fff;
-    text-align: center;
-	    clip-path: polygon(0 0, 95% 0, 95% 45%, 98% 50%, 95% 55%, 95% 100%, 0 100%)
+    text-align: left;
+	clip-path: polygon(0 0, 95% 0, 95% 45%, 98% 50%, 95% 55%, 95% 100%, 0 100%);
+	height:100%;
 }
 .planes-y-precios .header-interior {
     min-height: 395px;
@@ -1164,11 +1165,13 @@ label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check {
     color:#000;
 }
 .header-interior h1.page-title {
-    font-size:48px;
+    font-size:34px;
+	width:85%;
 }
 .header-interior p {
     font-weight: 400;
-    font-size:17px;
+    font-size:21px;
+	padding-top:20px;
     margin:0 0 5px 0;
 }
 
@@ -1729,7 +1732,6 @@ form.registro {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    padding:78px 0 70px 0;
 }
 .logged-in .contenido-wrapper {
     padding:116px 0 70px 0;
@@ -1762,7 +1764,11 @@ form.registro {
 }
 /*eliminando anchos y paddings pagina esquemas*/
 .logged-out.ventajas .contenido-wrapper{
-padding: 78px 0 0 0;
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
 }
 .logged-out.ventajas .contenido-wrapper .contenido{
 	padding: 0;
@@ -1777,7 +1783,6 @@ padding: 78px 0 0 0;
     margin: auto;
     width: 95%;
     padding-top: 140px;
-	min-height: 490px;
 }
 
 /*eliminando anchos y paddings pagina esquemas Fin*/
@@ -3835,6 +3840,9 @@ footer .salir-test span.cerrar-test {
 }
 .contenido .container .alert.alert-info{
 	font-size:21px;
+}
+.contenido .container .text-center.alert.alert-info{
+	padding-left: 10%;
 }
 /*boton sin subrayado*/
 /*

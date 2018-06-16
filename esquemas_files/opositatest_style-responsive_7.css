@@ -31,7 +31,7 @@
         margin:8px 0 0 0;
     }
     .contenido-wrapper {
-        padding: 67px 0 70px 0;
+		background-color: #03A9FA;
     }
 
     .test .contenido-wrapper {
@@ -312,7 +312,9 @@
     .test .contenido-wrapper {
         padding: 104px 0 0 0;
     }
-
+	.logged-out.ventajas .contenido-wrapper .container{
+	 min-width: auto;
+	}
     .menu-contenido li {
         margin: 0 20px 0 0;
     }
@@ -461,12 +463,28 @@
 @media (max-width: 768px){
 
     /* General */
+	.contenido{
+		float:none;
+	 	
+	}
+	.logged-out.ventajas .contenido-wrapper{
+		padding:0;
+	}
+	.logged-out.ventajas .contenido-wrapper .container{
+		width:100%;
+		min-height: auto;
+		padding-top:50px;
+	}
+	.logged-out.ventajas .contenido-wrapper .contenido{
+		width:auto;
+	}
     .contenido h2 {
         font-size: 28px;
         line-height:32px;
     }
     .contenido-wrapper {
         padding: 93px 0 70px 0;
+		background-color:#03a9f4;
     }
     .logged-in.home .contenido-wrapper{
         padding: 130px 0 70px 0;
@@ -586,13 +604,30 @@
     /* Header */
     .header-interior {
         min-height: 10px;
-        padding:20px 0 20px 0;
+        padding:80px 0 20px 0;
+		    width: 100%;
+    position: relative;
+    background: url(header_bg.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 55% 95%, 50% 100%, 45% 95%, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 55% 95%, 50% 100%, 45% 95%, 0 95%);
+}
+.header-interior h1.page-title  {
+		font-size:22px;
+		width:auto;
+    }
+    .header-interior p {
+        font-size:12px;
+		padding:10px 0;
+    }
     }
     .planes-y-precios .header-interior {
         min-height: 10px;
     }
     .header-interior h1.page-title {
-        font-size:34px;
+        
         margin:0 0 0px 0;
     }
     .area-personal .header-interior h1.page-title {
@@ -601,10 +636,9 @@
     }
     .header-interior h1.page-title + p {
         margin:20px 0 0 0;
+		
     }
-    .header-interior p {
-        font-size:16px;
-    }
+
     .area-personal .header-interior h1.page-title + p {
         margin:5px 0 0 0;
         font-size:14px;
