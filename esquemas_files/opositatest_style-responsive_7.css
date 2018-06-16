@@ -474,6 +474,10 @@
 		width:100%;
 		min-height: auto;
 		padding-top:50px;
+		padding: 20px;
+	}
+	.contenido .container .text-center.alert.alert-info{
+		padding-left: 15px;
 	}
 	.logged-out.ventajas .contenido-wrapper .contenido{
 		width:auto;
