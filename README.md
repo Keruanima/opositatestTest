@@ -26,7 +26,7 @@ Para estos puntos realicé los siguientes cambios:
     1.1-Modificar estructura en el Html y texto del botón.
     
   2- variar tamaños de texto, paddings, alturas, márgenes y aspecto del botón para su correcta visualización en todos los dispositivos.
-  
+   2.2-Ajusté el tamaño de texto del mensaje de consentimiento de cookies en móvil porque tapaba el botón (para móvil me centre en la versión de Iphone5 por tener el ancho más pequeño).
  
  3-limpiar, reordenar código.
 
