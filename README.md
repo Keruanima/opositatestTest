@@ -32,4 +32,4 @@ Para estos puntos realicé los siguientes cambios:
 
 
 Eso es todo, espero que el tiempo de carga sea aceptable y no haya fallos importantes, he añadido anotaciones simples para ayudarme a reconocer
-los motivos de cambios en partes del css. Un saludo.
+los motivos de cambios en partes del css, principalmente he tocado "opositatest_style_4" y "opositatest_style_responsive_7". Un saludo.
